@@ -1,4 +1,4 @@
-# 🎧 Spotify Explorer
+# 🎧 Spotify Dashborad
 
 A personalized music dashboard built with Next.js, TypeScript, and Spotify API.  
 Browse your top tracks, saved albums, playlists, and get deep insights into your listening patterns.  
