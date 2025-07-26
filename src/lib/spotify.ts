@@ -10,10 +10,16 @@ export const getLoginUrl = (): string => {
     'user-library-read',
   ].join(' ');
 
+  const redirectUri = 'https://spotify-dashboard-omega.vercel.app/api/callback';
+  // process.env.NODE_ENV === 'development'
+  //   ? 'http://localhost:3000/api/callback'
+  //   : 'https://your-app.vercel.app/api/callback';
+
+
   const params = new URLSearchParams({
     client_id: SPOTIFY_CLIENT_ID,
     response_type: 'code',
-    redirect_uri: SPOTIFY_REDIRECT_URI,
+    redirect_uri: redirectUri,
     scope,
   });
 
